@@ -4,7 +4,7 @@
   Closures are an abstract programming concept that describes the process in which a "chunk of code" can be saved, invoked, reassigned and passed around whilst still being able to access any artifacts (variables, method calls, etc.) that were in its scope at the time the closure was created. 
 2. What is binding?
   Closures keep track of the environment around them via *binding*. Binding consists of the environment surrounding a closure after its creation. In esence, the closure will *bind* and drag around all artifacts in its scope as needed to function properly.
-- 3. How does binding affect the scope of closures?
+3. How does binding affect the scope of closures?
   Binding can seem to circumnavigate the concept of local variable scope in Ruby. We can bind a variable to a closure and allow this variable to be accessed at a scope which it wouldn't be able to be accessed in otherwise. For example:
 ```ruby
 def a_method(some_proc)
